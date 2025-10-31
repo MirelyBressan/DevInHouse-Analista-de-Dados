@@ -5,7 +5,7 @@
 import csv  # biblioteca para trabalhar com arquivos CSV
 
 # abre o arquivo CSV original para leitura
-with open('vendas.csv', 'r', newline='') as arquivo_entrada:
+with open('Semana_04/vendas.csv', 'r', newline='') as arquivo_entrada:
     leitor = csv.reader(arquivo_entrada)
     cabecalho = next(leitor)  # lê a primeira linha (cabeçalho)
     
@@ -28,7 +28,7 @@ with open('vendas.csv', 'r', newline='') as arquivo_entrada:
         linhas.append(linha)
 
 # cria um novo arquivo CSV com a coluna Total
-with open('vendas_com_total.csv', 'w', newline='') as arquivo_saida:
+with open('Semana_04/vendas_com_total.csv', 'w', newline='') as arquivo_saida:
     escritor = csv.writer(arquivo_saida)
     escritor.writerows(linhas)
 

@@ -12,7 +12,8 @@ emails = [
     "ana@site",
     "teste@dominio.com",
     "carla@meu-email.org",
-    "emailinvalido.com"
+    "emailinvalido.com",
+    "Larissa@meu-email.org"
 ]
 
 # expressão regular simples para validar e-mails
@@ -30,12 +31,12 @@ for e in emails:
         invalidos.append(e)
 
 # grava os e-mails válidos em um arquivo
-with open('emails_validos.txt', 'w') as arquivo_valido:
+with open('Semana_04/emails_validos.txt', 'w') as arquivo_valido:
     for v in validos:
         arquivo_valido.write(v + '\n')
 
 # grava os e-mails inválidos em outro arquivo
-with open('emails_invalidos.txt', 'w') as arquivo_invalido:
+with open('Semana_04/emails_invalidos.txt', 'w') as arquivo_invalido:
     for i in invalidos:
         arquivo_invalido.write(i + '\n')
 
